@@ -1,0 +1,168 @@
+﻿<!doctype html>
+<html lang="he">
+<head>
+    <meta charset="utf-8" />
+    <title> מתנות לבן/בת הזוג </title>
+    <meta name="description" content="מתנות מתתוקות לאהובים שלכם" />
+    <meta name="keywords" content="מתנה, בן-זוג,בת-זוג, שוקולד, מתוק" />
+    <meta name="author" content="שיר שלי ואור חיים" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+    <link rel="icon" href="Images/ICON.png" type="image/x-icon">
+    <!-- CSS -->
+    <!--<link href="styles/reset.css" rel="stylesheet" />-->
+    <link href="styles/myStyle.css" rel="stylesheet" />
+
+</head>
+<body>
+    <nav>
+        <ul>
+            <li><a href="index.html"><img id="ICON" src="Images/ICON.png" /> ראשי </a></li>
+            <li>
+                <a class="notActiveNav" href="#">סוגי השוקולד</a>
+                <ul>
+                    <li><a href="#" class="notActiveNav">מריר</a></li>
+                    <li><a href="chocolateMilk.html">חלב</a></li>
+                    <li><a href="#" class="notActiveNav">לבן</a></li>
+                    <li><a href="#" class="notActiveNav">בלונדי</a></li>
+                    <li><a href="#" class="notActiveNav">רובי</a></li>
+                </ul>
+            </li>
+            <li>
+                <a class="notActiveNav" href="#">על השוקולד</a>
+                <ul>
+                    <li><a href="#" class="notActiveNav">היסטוריה</a></li>
+                    <li><a href="chocolateFacts.html">עובדות</a></li>
+                </ul>
+            </li>
+            <li>
+                <a href="#" class="notActiveNav">מארזי מתנה</a>
+                <ul>
+                    <li><a href="#" class="notActiveNav">אישיים</a></li>
+                    <li><a href="partnerGift.html">לבן/בת הזוג</a></li>
+                    <li><a href="#" class="notActiveNav">משפחתיים</a></li>
+                </ul>
+            </li>
+            <li><a id="nav_about" href="about.html">אודות</a></li>
+            <li><a id="nav_contact" href="contactUs.html">צור קשר</a></li>
+        </ul>
+    </nav>
+
+    <header>
+        <img class="headIMG" src="images/chocolate-perlins-HP.jpg" alt="שוקולד חלב" />
+        <div class="bg_headerText">
+            <h1>מארזים לבן/בת הזוג</h1>
+        </div>
+    </header>
+
+    <nav aria-label="תפריט פירורי לחם" class="bcnav">
+        <ol>
+            <li><a href="index.html"> דף הבית</a></li>
+            <li> לבן/בת הזוג:</li>
+        </ol>
+    </nav>
+
+    <h2>מתלבטים איזו מתנה מתוקה לתת לאדם שממתיק לכם את היום?</h2>
+    <p id="signUpToNewsletter">אנחנו כאן כדי לעזור! אתם רק צריכים למלא את הטופס </p>
+
+    <div id="giftContent">
+        <form id="giftForm">
+            <span class="asterisk">*</span> <p id="required">שדה חובה</p> <br />
+            <label for="partnerName">
+                <span class="asterisk">*</span> <p>השם הפרטי של בן/בת הזוג:</p> <br />
+                <input id="partnername" type="text" placeholder="הקלד כאן" class="text" required />
+            </label>
+            <fieldset>
+                <span class="asterisk">*</span> <p>מגדר בן/בת הזוג:</p> <br />
+                <label for="malePG" class="gender">
+                    <input id="malePG" type="radio" name="gender" />זכר
+                </label><br />
+                <label for="femalePG" class="gender">
+                    <input id="femalePG" type="radio" name="gender" />נקבה
+                </label><br />
+            </fieldset>
+
+            <fieldset>
+                <span class="asterisk">*</span> <p>וחוץ ממך.. מה הטעם שלו/ה?</p> <br />
+                <label for="milkP">
+                    <input id="milkP" type="checkbox" name="tastePG" value="חלב"/>חלב
+                </label><br />
+                <label for="darkP">
+                    <input id="darkP" type="checkbox" name="tastePG" value="מריר" />מריר
+                </label><br />
+                <label for="whiteP">
+                    <input id="whiteP" type="checkbox" name="tastePG" value="לבן" />לבן
+                </label><br />
+                <label for="blondeP">
+                    <input id="blondeP" type="checkbox" name="tastePG" value="בלונדי" />בלונדי
+                </label><br />
+                <label for="rubiP">
+                    <input id="rubiP" type="checkbox" name="tastePG" value="רובי" />רובי
+                </label><br />
+            </fieldset>
+            <fieldset>
+                <span class="asterisk">*</span> <p>טיפוס של מותק או מלוח?</p> <br />
+                <label for="sweet" class="gender">
+                    <input id="sweet" type="radio" name="sweetPG" value="מתוק" />מתוק
+                </label><br />
+                <label for="salty" class="gender">
+                    <input id="salty" type="radio" name="sweetPG" value="מלוח" />מלוח
+                </label><br />
+                <label for="inBet" class="gender">
+                    <input id="inBet" type="radio" name="sweetPG" value="משהו באמצע"/>משהו באמצע
+                </label><br />
+            </fieldset>
+
+            <label for="buttonP">
+                <input id="buttonP" type="button" value="איזה מארז יצא לי?" />
+            </label>
+
+            <div id="showresult">
+                <img src="images/bow.png"/>
+                <span class="close-btn" onclick="closeResult()">סגור</span>
+                <p id="resultText"></p>
+                <p id="resultText2"></p>
+            </div>
+        </form>
+        <aside id="giftBoxBG">
+            <div id="elements">
+                <img class="elements" id="chips" src="images/chips.png">
+                <img class="elements" id="prtzel" src="images/prtzel.png">
+                <img class="elements" id="cookies" src="images/cookies.png">
+                <img class="elements" id="muffin" src="images/muffin.png">
+                <img id="basket" src="images/basket.png">
+                <div id="memo">
+                    <img id="bow" src="images/bow.png">
+                    <div>
+                        <p id="Ans"></p>
+                        <span id="anss">
+                            <p id="femaleAns" class="invisible">לבת הזוג הכי מתוקה!</p>
+                            <p id="maleAns" class="invisible">לבן הזוג הכי מקסים!</p>
+                        </span>
+                    </div>
+                 
+                </div>
+            </div>
+
+            <div id="giftTastesBG">
+                <img class="giftTastes hidden" id="milkPG" src="images/milk.png"/>
+                <img class="giftTastes hidden" id="darkPG" src="images/dark.png">
+                <img class="giftTastes hidden" id="whitePG" src="images/white.png">
+                <img class="giftTastes hidden" id="blondePG" src="images/blond.png">
+                <img class="giftTastes hidden" id="rubiPG" src="images/rubi.png">
+            </div>
+        </aside>
+    </div>
+    <section class="credit">
+        <p>*חלק מהאלמנטים בדף זה עוצבו על ידי <a href="https://www.freepik.com/">FREEP!K</a></p>
+    </section>
+    <footer>
+        <a href="siteMap.html">מפת האתר</a>
+        <a href="about.html">אודות</a>
+        <a href="contactUs.html">צור קשר</a>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="jScripts/jquery-3.6.0.min.js"></script>
+    <script src="jScripts/JavaScript.js" type="text/javascript"></script>
+</body>
+</html>

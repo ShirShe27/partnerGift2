@@ -1,0 +1,850 @@
+﻿@import url('https://fonts.googleapis.com/css2?family=Assistant:wght@200..800&display=swap');
+
+body {
+    direction: rtl;
+    font-family: "Assistant", sans-serif;
+    color: black;
+    font-size: 1vw;
+    width: 1280px;
+    margin: 0 auto;
+}
+
+h1 {
+    z-index: 10;
+    color: #F2F2F2;
+    text-align: center;
+    font-size: 5vw;
+    margin: 0;
+}
+
+h2 {
+    color: #1F0A01;
+    font-size: 2.3vw;
+    margin-right: 5px;
+    margin-bottom: 0;
+}
+
+
+h3 {
+    color: #C39634;
+    font-size: 2vw;
+    margin-bottom: 0;
+}
+
+.container {
+    width: 60%;
+    margin: 0 auto;
+}
+
+/*תפריט*/
+
+nav {
+    width: 1280px;
+    position: fixed;
+    z-index: 100;
+    background-color: #1F0A01;
+}
+
+    nav ul {
+        margin: 0;
+        padding: 0;
+        list-style: none;
+        z-index: 100;
+    }
+
+    nav li a {
+        display: block;
+        background-color: #1F0A01;
+        color: #F2F2F2;
+        width: 120px;
+        height: 30px;
+        padding-top: 10px;
+        text-decoration: none;
+        text-align: center;
+    }
+
+        nav li a:link {
+            background-color: #1F0A01;
+        }
+
+        nav li a:hover {
+            background-color: #C39634;
+            color: #F2F2F2;
+        }
+
+    nav ul li ul {
+        display: none;
+        position: absolute;
+    }
+
+    nav ul li:hover ul {
+        display: block;
+        background-color: #C39634;
+        color: #F2F2F2;
+        width: 120px;
+        height: 50px;
+        text-decoration: none;
+        text-align: center;
+    }
+
+    nav ul li ul a:hover {
+        background-color: #CAA48B;
+        color: #1F0A01;
+    }
+
+    nav ul li {
+        display: inline-block;
+    }
+
+.nav_aboutContact {
+    position: absolute;
+    float: left;
+    display: inline-block;
+}
+
+.notActiveNav {
+    cursor: not-allowed;
+}
+
+#ICON {
+    height:16px;
+    width:16px;
+}
+
+/*תפריט פירורי לחם*/
+
+.bcnav {
+    position: relative;
+    list-style: none;
+    text-decoration: none;
+    display: inline-block;
+    background-color: #F2F2F2;
+    margin-top: 10px;
+    padding: 0;
+    z-index: 1;
+}
+
+    .bcnav a {
+        color: #1F0A01;
+        text-decoration: none;
+        background-color: #F2F2F2;
+        display: inline-block;
+        padding: 0;
+        width: 80px;
+    }
+
+    .bcnav li a:link {
+        color: #1F0A01;
+        text-decoration: none;
+    }
+
+    .bcnav li a:hover {
+        color: #1F0A01;
+        background-color: #CAA48B;
+    }
+
+    .bcnav li a:after {
+        color: #1F0A01;
+    }
+
+    .bcnav li {
+        display: inline-block;
+        list-style: none;
+        margin-left: 10px;
+    }
+
+    .bcnav ol li:after{
+    content: " >";
+    }
+
+    .bcnav ol li:last-child:after {
+    content: "";
+    }
+
+
+/*דף הבית*/
+
+
+#headerHomePage {
+    height: 360px;
+    position:relative;
+}
+
+.bg_headerText {
+    background-color: #CAA48B;
+    opacity: 80%;
+    width: 920px;
+    max-height: 120px;
+    position: relative;
+    top: 120px;
+    right: 100px;
+    padding-bottom: 1%;
+    z-index: 2;
+}
+
+
+
+#hearAboutChocolate {
+    margin: 0;
+    width: 100%;
+    padding-bottom: 1%;
+    background-color: #C39634;
+}
+
+    #hearAboutChocolate > h2 {
+        color: #1F0A01;
+        text-align: center;
+        padding-top: 2%;
+        font-size: 2.1vw;
+    }
+
+#tastes {
+    min-height: 400px;
+    max-width: 1280px;
+    background-color: #F2F2F2;
+    padding-top: 20px;
+}
+
+    #tastes h3 {
+        text-align: center;
+        margin-top: 20px;
+        margin-bottom: 50px;
+        font-size: 1.8vw;
+    }
+
+    #tastes > div {
+        padding-right: 150px;
+    }
+
+    #tastes a {
+        text-decoration: none;
+        color: #1F0A01;
+    }
+
+    #tastes a:after {
+        text-decoration: none;
+        color: #1F0A01;
+    }
+
+    #tastes div div {
+        color: #1F0A01;
+        display: inline-block;
+        height: 200px;
+        width: 160px;
+        padding-left: 40px;
+        font-size: 1.5vw;
+        font-weight: bold;
+        transition: all 0.5s linear;
+    }
+
+        #tastes div div:hover img {
+            opacity: 70%;
+            padding-bottom: 10px;
+            transition: all 0.5s linear;
+        }
+
+.notActive {
+    cursor: not-allowed;
+    color: gray;
+}
+
+#tastes div p {
+    text-align: center;
+    margin: 0;
+    padding: 0;
+    transition: all 0.5s linear;
+}
+
+#tastes div div:hover p {
+    color: #C39634;
+    margin-bottom: 10px;
+    transition: all 0.5s linear;
+}
+
+#general {
+    background-color: #C39634;
+}
+
+    #general div {
+        display: inline-block;
+        height: 230px;
+        width: 250px;
+        padding: 20px,40px,0px,0px;
+        font-size: 1.5vw;
+        text-align: center;
+        font-weight: bold;
+        margin-right: 260px;
+        margin-top: 30px;
+    }
+
+    #general a {
+        text-decoration: none;
+    }
+
+    #general p {
+        margin-bottom: 5px;
+        color: #1F0A01;
+        transition: color 0.3s linear;
+    }
+
+    #general div:hover p {
+        color: #F2F2F2;
+        transition: color 0.3s linear;
+    }
+
+    #general a img {
+        height: 160px;
+        width: 250px;
+        display: inline-block;
+        margin-left: 50px;
+        margin-top: 2px;
+        z-index: 3;
+        transition: opacity 0.5s linear;
+        border-radius: 15px;
+    }
+
+    #general a:hover img {
+        opacity: 70%;
+        transition: opacity 0.5s linear;
+    }
+
+    #general iframe {
+        margin-right: 30px;
+        margin-top: 10%;
+        margin-bottom: 10%;
+    }
+
+.credit {
+    background-color: #C39634;
+    text-align:center;
+    font-family:Assistant;
+    font-size:1.2vw;
+   
+}
+
+.credit p {
+    margin:0;
+}
+
+footer {
+    background-color: #1F0A01;
+    text-align: center;
+    height: 60px;
+}
+
+    footer a {
+        color: #F2F2F2;
+        position: relative;
+        text-decoration: none;
+        margin-left: 50px;
+        right: 20px;
+        top: 20px;
+        bottom: 20px;
+    }
+
+/*שוקולד חלב*/
+
+#firstSectionMilk {
+    position: relative;
+    margin: 0;
+}
+
+.headIMG {
+    position: relative;
+    min-width: 1280px;
+    max-height: 390px;
+    margin: 0;
+    padding: 0;
+}
+
+.bg_headerText {
+    position: absolute;
+    z-index: 9;
+    opacity: 70%;
+    background-color: #C39634;
+    right: 14%;
+    top: 150px;
+}
+
+#firstSection {
+    position: relative;
+    margin-top: 120px;
+}
+
+section ul {
+    list-style-image: url(../Images/chocolate-list.png);
+}
+
+section > p {
+    margin-top: 8px;
+}
+
+#winkingEmoji {
+    height: 18px;
+    width: 18px;
+    position: relative;
+    top: 2px;
+}
+
+#products {
+    width: 1280px;
+    height: 500px;
+    background-color: #F2F2F2;
+    margin-top: 50px;
+}
+
+    #products > h3 {
+        padding-top: 20px;
+        padding-bottom: 10px;
+        text-align: center;
+    }
+
+#cardsGroup {
+    position: relative;
+    right: 180px;
+    top: 10px;
+    height: 320px;
+}
+
+.productCard {
+    width: 230px;
+    height: 300px;
+    border: 1px solid black;
+    display: inline-table;
+    margin-right: 60px;
+    text-align: center;
+    border-radius: 15px;
+    cursor: not-allowed;
+}
+
+
+.productCard:hover {
+    background-color: #1F0A01;
+    color: #F2F2F2;
+}
+
+    .productCard > h4 {
+        background-color: #C39634;
+    }
+
+.productImg {
+    width: 80px;
+    height: 60px;
+    padding-top: 20px;
+}
+
+section a:link {
+    color: #1F0A01;
+}
+
+section a:hover {
+    background-color: #C39634;
+    color: #F2F2F2;
+}
+
+h4 {
+    margin-bottom: 0%;
+    color: #1F0A01;
+}
+
+#recipe p:last-child {
+    color: #C39634;
+    font-size: 1.5vw;
+    font-weight: bold;
+}
+
+/*מפת האתר*/
+
+header {
+    width: 100%;
+    height: 360px;
+    position: relative;
+    float: none;
+}
+
+
+.noPhoto {
+    color: #1F0A01;
+    position: static;
+    margin-top: 20px;
+}
+
+
+div table {
+    position: relative;
+    margin-top: 90px;
+    margin-right: 20px;
+    margin-bottom: 20px;
+}
+
+tr {
+    margin-left: 60px;
+}
+
+.firstSectionNoPhoto {
+    z-index: 2;
+}
+
+table {
+    text-decoration: none;
+    position: relative;
+    margin-top: 30px;
+    margin-right: 100px;
+    margin-bottom: 150px;
+}
+
+    table a {
+        text-decoration: none;
+        color: #1F0A01;
+    }
+
+        table a:after {
+            text-decoration: none;
+            color: #1F0A01;
+        }
+
+th {
+    font-family: 'Rubik Doodle Shadow';
+    text-align: center;
+    padding-left: 25px;
+    color: #C39634;
+    font-size: 2.5vw;
+}
+
+tr {
+    text-align: center;
+    padding-left: 25px;
+    font-size: 2vw;
+}
+
+
+
+
+/*צור קשר*/
+
+#signUpToNewsletter {
+    color: #1F0A01;
+    margin-top: 0px;
+    font-size: 1.6vw;
+}
+
+#contactForm {
+    margin-bottom: 30px;
+    margin-right: 20px;
+}
+
+.asterisk {
+    color: #C39634;
+    font-size: 1.3vw;
+    font-weight: bold;
+    margin-left: 3px;
+}
+
+#required {
+    color: #C39634;
+    display: inline-block;
+    margin-bottom: 10px;
+    font-weight: bold;
+}
+
+.text {
+    border: 1px solid #C39634;
+    border-radius: 5px;
+    height: 24px;
+    width: 330px;
+    font-family: "Assistant", sans-serif;
+}
+
+fieldset {
+    border: none;
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
+
+form p {
+    display: inline-block;
+    color: #1F0A01;
+    margin-bottom: 5px;
+}
+
+#message {
+    height: 80px;
+}
+
+#submit {
+    color: #F2F2F2;
+    background-color: #C39634;
+    font-size: 1.3vw;
+    font-weight: bold;
+    text-align: center;
+    margin-top: 30px;
+    border: 1px solid #1F0A01;
+    border-radius: 5px;
+    width: 150px;
+    height: 30px;
+    transition: all 0.3s linear;
+}
+
+    #submit:hover {
+        background-color: #1F0A01;
+        color: #F2F2F2;
+        transition: all 0.3s linear;
+            
+    }
+
+    /*עובדות על שוקולד*/
+
+#allfacts{
+    margin-right:5%;
+    width: 80%;
+    margin-bottom: 60px;
+}
+
+#allfacts p {
+    color:black;
+    font-size: 1.2vw;
+}
+
+
+
+
+/*אודות*/
+
+aside iframe {
+    margin-top: 30px;
+    margin-bottom: 30px;
+    position: relative;
+    right: 340px;
+    z-index: 2;
+    border: 20px solid #C39634;
+    border-radius: 15px;
+}
+
+#aboutUs {
+    background-color: #CAA48B;
+    color: #1F0A01;
+    margin-top: 30px;
+    text-align: center;
+}
+
+#aboutUs {
+    padding-top: 20px;
+}
+
+#aboutUs p:first-line {
+    font-weight: bold;
+}
+
+#hitLogo {
+    width: 120px;
+    height: 80px;
+    border-radius: 15px;
+    margin-bottom: 20px;
+}
+
+.picCredit {
+    margin:0;
+    font-size:0.7vw;
+}
+
+/*מתנה לבן/בת הזוג*/
+
+#giftContent {
+    clear: both;
+    display: inline-block;
+    width: 1280px;
+    height: auto;
+    margin-bottom: 40px;
+}
+
+    #giftForm {
+    width: 400px;
+    height: auto;
+    margin-right: 40px;
+    margin-bottom: 20px;
+    float: right;
+    }
+
+    #giftBoxBG {
+    width: 600px;
+    height: 650px;
+    background-color: #CAA48B;
+    float: left;
+    }
+
+#buttonP {
+background-color: #C39634;
+color: #1F0A01;
+border-radius: 15px;
+}
+
+
+#giftTastesBG {
+    display: inline-block;
+    margin-top: 190px;
+    margin-right: 60px;
+    margin-left: 30px;
+    
+}
+
+    #giftTastesBG > #milk {
+        float: right;
+        margin-left: 20px;
+    }
+
+    #giftTastesBG > #white {
+        float: left;
+        margin-left: 20px;
+    }
+
+    #giftTastesBG > #rubi, #blond {
+        margin-right: 63px;
+    }
+
+    .giftTastes {
+        height: 150px;
+        width: 150px;
+    }
+
+#elements {
+    margin-top: 130px;
+    margin-right: 120px;
+}
+
+.elements {
+    position: absolute;
+    bottom: 160px;
+    display: none;
+}
+
+#basket { 
+    position: absolute;
+    width: 360px;
+    height: 170px;
+    z-index: 3;
+}
+
+#chips {
+    margin-right: 10px;
+}
+
+#prtzel {
+    margin-right: 135px;
+}
+
+#cookies {
+    margin-right: 60px;
+}
+
+#muffin {
+    margin-right: 240px;
+    transform: scale(0.9);
+}
+
+#memo {
+    margin-right: 140px;
+}
+
+    #memo div {
+        width: 175px;
+        height: 120px;
+        background-color: #F2F2F2;
+        border: 1px solid black;
+        border-radius: 15px;
+        position: absolute;
+        margin-top: 20px;
+        transform: rotate(7deg);
+        z-index: 6;
+    }
+
+    #memo #bow {
+    position: absolute;
+    margin-right: 35px;
+    width: 80px;
+    height: 60px;
+    z-index: 8;
+    }
+
+    #memo p {
+        padding-right: 5px;
+    }
+
+#showresult {
+    position: absolute;
+    top: 600px;
+    right: 540px;
+    height: 450px;
+    width: 650px;
+    color: #F2F2F2;
+    background-color: #F2F2F2;
+    border: 4px solid #C39634;
+    border-radius: 15px;
+    z-index: 10;
+    display: none;
+    padding: 20px;
+}
+
+    #showresult .close-btn {
+        display: block;
+        margin-bottom: 10px;
+        cursor: pointer;
+        font-weight: bold;
+        color: #1F0A01;
+    }
+
+    #showresult img {
+        height: 120px;
+        width: 150px;
+        margin-bottom: 10px;
+        margin-right: 245px;
+        display: none;
+    }
+
+
+.hidden {
+    opacity: 50%;
+}
+
+.visible {
+    opacity: 100%;
+}
+
+.invisible {
+    display: none;
+}
+
+.shown {
+    display: block;
+}
+
+#Ans {
+    font-weight:800;
+    font-size:1.5vw;
+    margin-bottom:0;
+    margin-top:30px;
+}
+
+#anss {
+    margin-top: 10px;
+    font-weight: 500;
+    font-size: 1.2vw;
+}
+
+#resultText {
+    text-align:center;
+    font-family:'Rubik Doodle Shadow';
+    font-size:1.5vw;
+    display:block;
+    color:#C39634;
+}
+
+#resultText2 {
+    font-size: 1.2vw;
+    position:absolute;
+}
+
+.close-btn {
+    width:30px;
+    background-color:#C39634;
+    color-interpolation:#F2F2F2;
+}
